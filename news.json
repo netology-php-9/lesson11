@@ -1,0 +1,53 @@
+[
+    {
+        "title": "Заголовок1",
+        "text": "Текст 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis delectus dolorem ea eveniet magnam natus nihil odio praesentium quae!",
+        "comments": [
+            "Привет",
+            "qweqwe",
+            "www",
+            "www",
+            "weqweqwe",
+            "qweqweqwe",
+            "feedback",
+            "qaz",
+            "ww"
+        ]
+    },
+    {
+        "title": "Заголовок2",
+        "text": "Текст 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis delectus dolorem ea eveniet magnam natus nihil odio praesentium quae!",
+        "comments": [
+            "qweqwe",
+            "asdasd",
+            "комментарий",
+            "qweqwe",
+            "11"
+        ]
+    },
+    {
+        "title": "Заголовок3",
+        "text": "Текст 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis delectus dolorem ea eveniet magnam natus nihil odio praesentium quae!",
+        "comments": [
+            "qwerty",
+            "ww"
+        ]
+    },
+    {
+        "title": "Заголовок4",
+        "text": "Текст 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis delectus dolorem ea eveniet magnam natus nihil odio praesentium quae!",
+        "comments": [
+            "ww"
+        ]
+    },
+    {
+        "title": "Заголовок5",
+        "text": "Текст 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis delectus dolorem ea eveniet magnam natus nihil odio praesentium quae!",
+        "comments": []
+    },
+    {
+        "title": "Заголовок6",
+        "text": "Текст 6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis delectus dolorem ea eveniet magnam natus nihil odio praesentium quae!",
+        "comments": []
+    }
+]
