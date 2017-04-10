@@ -1,13 +1,23 @@
 <?php
 
+
 class Conf
 {
 
-    protected $path;
+    protected $logPath;
+    protected $cachePath;
 
-    protected function getPath()
+    protected function getLogPath()
     {
-        $this->path = __DIR__ . '/log.txt';
-        return $this->path;
+        $this->logPath = __DIR__ . '/log.txt';
+        return $this->logPath;
     }
+
+    public function getCachePath()
+    {
+        $this->cachePath = __DIR__ . '/cache.txt';
+        return $this->cachePath;
+    }
+
+
 }
