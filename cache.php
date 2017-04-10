@@ -1,5 +1,6 @@
 <?php
 
+
 class Cache extends Conf
 {
 

@@ -3,6 +3,7 @@ require('conf.php');
 require_once('log.php');
 require_once('cache.php');
 
+
 class Product extends Log
 {
 
@@ -51,7 +52,6 @@ class Food extends Product implements SetPrice
 
     public function setPrice($weight)
     {
-
 
         $this->count = $weight;
 

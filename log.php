@@ -1,5 +1,6 @@
 <?php
 
+
 class Log extends Conf
 {
 
