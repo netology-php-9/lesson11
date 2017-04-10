@@ -1,6 +1,7 @@
 <?php
-
+require('conf.php');
 require_once('log.php');
+require_once('cache.php');
 
 class Product extends Log
 {
@@ -51,6 +52,7 @@ class Food extends Product implements SetPrice
     public function setPrice($weight)
     {
 
+
         $this->count = $weight;
 
         if ($this->count > 10) {
@@ -86,7 +88,8 @@ class House extends Product implements SetPrice
     }
 }
 
-require_once "read_cache.php";
+$cache = new Cache();
+$cache->readCache();
 
 $food = new Food();
 $food->setPrice(9);
@@ -97,4 +100,4 @@ echo '<br>';
 $technology = new House();
 $technology->setPrice(2);
 
-require_once "write_cache.php";
+$cache->writeCache();

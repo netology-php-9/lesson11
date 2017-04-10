@@ -1,7 +1,5 @@
 <?php
 
-require('conf.php');
-
 class Log extends Conf
 {
 
@@ -11,7 +9,7 @@ class Log extends Conf
         debug_print_backtrace();
         $callMethod = ob_get_clean();
 
-        file_put_contents($this->getPath(), $callMethod, FILE_APPEND);
+        file_put_contents($this->getLogPath(), $callMethod, FILE_APPEND);
 
     }
 
