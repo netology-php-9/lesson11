@@ -1,6 +1,6 @@
 <?php
 
-require_once ('log.php');
+require_once('log.php');
 
 class Product extends Log
 {
@@ -86,11 +86,15 @@ class House extends Product implements SetPrice
     }
 }
 
+require_once "read_cache.php";
+
 $food = new Food();
 $food->setPrice(9);
 echo '<br>';
 $technology = new Technology();
-$technology->setPrice(2);
+$technology->setPrice(3);
 echo '<br>';
 $technology = new House();
 $technology->setPrice(2);
+
+require_once "write_cache.php";
