@@ -4,19 +4,12 @@
 class Conf
 {
 
-    protected $logPath;
-    protected $cachePath;
+    protected $path;
 
-    protected function getLogPath()
+    function getPath($class)
     {
-        $this->logPath = __DIR__ . '/log.txt';
-        return $this->logPath;
-    }
-
-    public function getCachePath()
-    {
-        $this->cachePath = __DIR__ . '/cache.txt';
-        return $this->cachePath;
+        $this->path = __DIR__ . '/' . $class . '.txt';
+        return $this->path;
     }
 
 
