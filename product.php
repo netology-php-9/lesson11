@@ -54,7 +54,7 @@ class Food extends Product implements SetPrice
     {
 
         $this->count = $weight;
-
+        $this->write();
         if ($this->count > 10) {
 
             echo 'Цена продуктов ' . $this->getPriceWithDiscount(15);
@@ -69,7 +69,7 @@ class Technology extends Product implements SetPrice
 
     public function setPrice($count)
     {
-
+        $this->write();
         $this->count = $count;
         echo 'Цена техники ' . $this->getPriceWithDiscount(80000);
 
@@ -81,7 +81,7 @@ class House extends Product implements SetPrice
 
     public function setPrice($count)
     {
-
+        $this->write();
         $this->count = $count;
         echo 'Цена здания ' . $this->getPriceWithDiscount(2000000);
 

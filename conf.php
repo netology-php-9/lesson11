@@ -6,11 +6,15 @@ class Conf
 
     protected $path;
 
-    function getPath($class)
+    public function getPath()
     {
-        $this->path = __DIR__ . '/' . $class . '.txt';
+        if (get_called_class() === 'Cache') {
+            $this->path = __DIR__ . '/Cache.txt';
+        } else {
+            $this->path = __DIR__ . '/Log.txt';
+        }
         return $this->path;
+
+
     }
-
-
 }

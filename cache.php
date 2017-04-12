@@ -9,11 +9,11 @@ class Cache extends Conf
     public function readCache()
     {
 
-        if (file_exists($this->getPath('Cache'))) {
+        if (file_exists($this->getPath())) {
 
-            if ((time() - $this->cache_time) < filemtime($this->getPath('Cache'))) {
+            if ((time() - $this->cache_time) < filemtime($this->getPath())) {
 
-                echo file_get_contents($this->getPath('Cache'));
+                echo file_get_contents($this->getPath());
                 exit;
             }
         }
@@ -22,7 +22,7 @@ class Cache extends Conf
 
     public function writeCache()
     {
-        file_put_contents($this->getPath('Cache'), ob_get_contents());
+        file_put_contents($this->getPath(), ob_get_contents());
         ob_end_flush();
     }
 }
